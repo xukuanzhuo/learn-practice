@@ -1,0 +1,26 @@
+{
+  "name": "own-bundler",
+  "version": "0.0.1",
+  "description": "build own bundler",
+  "main": "bundler.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "bundle": "node bundler.js | js-beautify",
+    "shake": "node shaker/shake.js"
+  },
+  "author": "xu kz",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/parser": "^7.4.5",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-traverse": "^6.26.0",
+    "babylon": "^6.18.0"
+  },
+  "devDependencies": {
+    "escodegen": "^1.11.1",
+    "esprima": "^4.0.1"
+  }
+}
