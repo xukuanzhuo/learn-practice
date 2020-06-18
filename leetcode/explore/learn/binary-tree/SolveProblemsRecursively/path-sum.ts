@@ -1,0 +1,8 @@
+// Path Sum
+function hasPathSum(root: TreeNode | null, sum: number): boolean {
+  if (!root) return false
+
+  if (!root.left && !root.right) return root.val === sum
+
+  return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val)
+};
