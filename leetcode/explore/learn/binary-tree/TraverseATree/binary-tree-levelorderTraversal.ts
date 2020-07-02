@@ -2,6 +2,7 @@
 /**
  * Definition for a binary tree node.
  */
+import { TreeNode } from '../interface'
 
 function levelOrder(root: TreeNode | null): number[][] {
   let list: number[][] = [], stack: TreeNode[] = []
